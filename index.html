@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logoo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Java Developer</p>
+            <h1>Hi, I'm <span>Kunchala Srihema</span><br>From Andhrapradesh</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/sri.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their professional skills and learning new things all the time. Currently, I am looking for new career opportunities.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br></li>
+                        <li><span>HTML & CSS</span><br></li>
+                        <li><span>SQL</span><br></li>
+                        <li><span>Excel</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>March 2024 to April 2024</span><br>Completed Internship in Codsoft based on Python.</li>
+                        <li><span>December 2024 to December 2024</span><br>Completed Internship in ACCENTURE FORAGE based on Data Analytics and Visualization Job.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018-2019</span><br>I did my schooling in ZPHS High School with 8.0 GPA,Menakuru.</li>
+                        <li><span>2019-2021</span><br>I did my Intermediate in Vikram Junior College with 88.4 percentage,Naidupet.</li>
+                        <li><span>2021-2025</span><br>I'm Pursuing my B.E in Velammal Institute Of Technology with 8.24 CGPA(*till 6th sem),Tiruvallur.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------projects---------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="services-list">
+            <div>
+                
+                <h2>Automated College Timetable Generator</h2>
+                <p>This project aims to develop a robust timetable generator for colleges to efficiently 
+                    schedule classes for students and faculty. By optimizing resource allocation and 
+                    minimizing conflicts, the system will streamline the timetabling process, 
+                    enhancing administrative efficiency and providing convenient schedules for all 
+                    stakeholders. Through algorithmic scheduling and user-friendly interfaces, the 
+                    generator will contribute to improved academic management and overall 
+                    educational experience within the institution.</p>
+                
+            </div>
+            
+    </div>
+</div>
+<!-- ----------certificates------------ -->
+<div id="certificates">
+    <div class="container">
+        <h1 class="sub-title">Certificates</h1>
+        <div class="work-list">
+            <div class="Oracle">
+                <a href="images/Python (Great Learning).pdf" class="pdf-link" target="_blank">
+                    <img src="images/greatlearning.jpg" alt="Certificate 1">
+                </a>    
+            </div>
+            <div class="Coursera">
+                <a href="images/INTRODUCTION TO SQL.pdf" class="pdf-link" target="_blank">
+                    <img src="images/simplelearn.jpg" alt="Certificate 2">
+                </a>
+            </div>
+            <div class="Coursera">
+                <a href="images/Excel.pdf" class="pdf-link" target="_blank">
+                    <img src="images/udemy.jpg" alt="Certificate 3">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i> srihema0813@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 9999999999</p>
+                <div class="social-icons">
+                    <div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/kunchala-srihema-1ba4ab289" target="_blank">
+                                <i class="fab fa-linkedin"></i> 
+                            </a>
+                            <a href="https://github.com/your-github-username" target="_blank">
+                                <i class="fab fa-github"></i> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Make sure to include the Font Awesome library in your HTML file -->
+                <!-- Add this line in the <head> section of your HTML document -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                
+                <a href="images/Srihema.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright by Srihema </p>
+    </div>
+    
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< https://script.google.com/macros/s/AKfycbxykUKEc4_isOmaRByAUejPMha_V9MiYNgmpb4W2UncIDr8afsDQ8Ev23aVxu7I_isT/exec >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
